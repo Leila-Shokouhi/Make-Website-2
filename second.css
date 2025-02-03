@@ -1,0 +1,92 @@
+* {
+    font-family: Arial, Helvetica, sans-serif ;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgba(95, 95, 95, 0.83);
+    color: darkred;
+    padding: 1rem;
+    position: relative;
+}
+
+header h1 {
+    display: flex;
+    text-align: start;
+}
+
+.menu a {
+    display: inline-block;
+    color: darkred;
+    text-decoration: none;
+}
+
+.a1 {
+    position: absolute;
+    top: 25px;
+    right: 340px;
+}
+
+.a2 {
+    position: absolute;
+    top: 25px;
+    right: 210px;
+} 
+
+.a3 {
+    position: absolute;
+    top: 25px;
+    right: 110px;
+} 
+
+.a4 {
+    position: absolute;
+    top: 25px;
+    right: 20px;
+} 
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.card {
+    background-color: rgba(222, 184, 135, 0.348);
+    border: black solid 2px;
+    border-radius: 10px;
+    width: 400px;
+    height: 560px;
+    margin: 15px;
+    padding: 0 15px;
+    padding-top: 40px;
+    box-shadow: black;
+    text-align: center;
+    transition: transform 0.5s ease;
+}
+.card:hover {
+    transform: scale(1.05);
+}
+.card img {
+    width: 90%;
+    height: 65%;
+    border: black solid 2px;
+    border-radius: 10px;
+}
+
+.card p {
+    font-size: small;
+}
+
+.card h3 {
+    color: rgb(133, 10, 10);
+    margin: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(95, 95, 95, 0.83);
+    color: darkred;
+}
