@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif ;
+}
+
+header {
+    background-color: #558b2f;
+    color: white;
+    padding: 1rem;
+    position: relative;
+    height: 70px;
+}
+
+header img {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 12px;
+    left: 20px;
+}
+
+header h1 {
+    position: absolute;
+    top: 15px;
+    left: 70px;
+    color: white;
+}
+
+.menu a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+}
+
+.a1 {
+    position: absolute;
+    top: 25px;
+    right: 340px;
+}
+
+.a2 {
+    position: absolute;
+    top: 25px;
+    right: 210px;
+} 
+
+.a3 {
+    position: absolute;
+    top: 25px;
+    right: 110px;
+} 
+
+.a4 {
+    position: absolute;
+    top: 25px;
+    right: 20px;
+} 
+
+main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.img {
+    width: 700px;
+    height: 500px;
+    margin: 40px;
+    margin-right: 0;
+    border: #558b2f solid 2px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.text {
+    width: 600px;
+    height: 250px;
+    margin-top: 150px;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: large;
+    color: #19280f;
+}
+
+.text h3 {
+    color: #558b2f;
+    font-size: xx-large;
+}
+
+.form {
+    margin: 30px auto;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: #19280f;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.form h3 {
+    margin-bottom: 30px;
+    color: #558b2f;
+    font-size: x-large;
+}
+
+form {
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-size: smaller;
+    color: #19280f;
+}
+
+form input {
+    width: 600px;
+    height: 45px;
+    border-radius: 4px;
+    border: #558b2f solid 0.5px;
+}
+
+#message {
+    height: 140px;
+}
+
+#submit {
+    width: 60px;
+    height: 30px;
+    margin-top: 15px;
+    font-size: medium;
+    background-color: #558b2f41;
+}
+
+#submit:hover {
+    background-color: #558b2f;
+}
+
+footer {
+    width: 100%;
+    padding: 10px;
+    position: absolute;
+    text-align: center;
+    background-color: #558b2f;
+    color: white;
+}
+
+@media screen and (max-width: 580px) {
+    header, footer  {
+        visibility: hidden;
+    }
+
+    .container {
+        visibility: hidden;
+        flex-wrap: wrap;
+    }
+
+    .form {
+        width: 80%;
+    }
+
+    form input {
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 580px) {
+    header, footer {
+        width: 100%;
+        font-size: x-small;
+    }
+
+    .container {
+        width: fit-content;
+        flex-wrap: wrap;
+    }
+
+    .img {
+        width: 40%;
+        height: auto;
+    }
+
+    .form {
+        width: 80%;
+    }
+
+    form input {
+        width: 90%;
+    }
+
+    .text {
+        font-size: xx-small;
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 720px) {
+    header, footer {
+        width: 100%;
+        font-size: small;
+    }
+
+    .container {
+        width: fit-content;
+        flex-wrap: nowrap;
+    }
+
+    .img {
+        width: 60%;
+        height: auto;
+    }
+
+    .form {
+        width: fit-content;
+        height: 700px;
+    }
+
+    form input {
+        width: 600px;
+        height: 45px;
+    }
+
+    .text {
+        font-size: x-small;
+        width: 40%;
+    }
+}
+
+@media screen and (min-width: 1080px) {
+    header, footer {
+        width: 100%;
+        font-size: medium;
+    }
+
+    .container {
+        width: fit-content;
+        flex-wrap: nowrap;
+    }
+
+    .img {
+        margin-right: 20px;
+        width: 700px;
+        height: 500px;
+    }
+
+    .form  {
+        width: auto;
+        height: 700px;
+    }
+
+    form input {
+        width: 600px;
+        height: 45px;
+    }
+ 
+    .text {
+        margin-left: 20px;
+        font-size: medium;
+    }
+}

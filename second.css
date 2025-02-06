@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif ;
+}
+
+header {
+    background-color: #558b2f;
+    color: white;
+    padding: 1rem;
+    position: relative;
+    height: 70px;
+}
+
+header img {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 12px;
+    left: 20px;
+}
+
+header h1 {
+    position: absolute;
+    top: 15px;
+    left: 70px;
+    color: white;
+}
+
+.menu a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+}
+
+.a1 {
+    position: absolute;
+    top: 25px;
+    right: 340px;
+}
+
+.a2 {
+    position: absolute;
+    top: 25px;
+    right: 210px;
+} 
+
+.a3 {
+    position: absolute;
+    top: 25px;
+    right: 110px;
+} 
+
+.a4 {
+    position: absolute;
+    top: 25px;
+    right: 20px;
+} 
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.card {
+    background-color: rgba(222, 184, 135, 0.348);
+    border: #558b2f solid 2px;
+    border-radius: 10px;
+    width: 400px;
+    height: 560px;
+    margin: 15px;
+    padding: 0 15px;
+    padding-top: 20px;
+    box-shadow: black;
+    text-align: center;
+    transition: transform 0.5s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 90%;
+    height: 65%;
+    border: #558b2f solid 2px;
+    border-radius: 10px;
+}
+
+.card p {
+    font-size: small;
+    color: #19280f;
+}
+
+.card h3 {
+    color: #558b2f;
+    margin: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #558b2f;
+    color: white;
+}
+
+
+@media screen and (max-width: 580px) {
+    header, footer  {
+        visibility: hidden;
+    }
+
+    .card {
+        width: auto;
+        height: fit-content;
+        font-size: xx-large;
+    }
+}
+
+@media screen and (min-width: 580px) {
+    header, footer {
+        width: 100%;
+        font-size: x-small;
+    }
+}
+
+@media screen and (min-width: 720px) {
+    header, footer {
+        width: 100%;
+        font-size: x-small;
+    }
+}
+
+@media screen and (min-width: 1080px) {
+    header, footer {
+        width: 100%;
+        font-size: medium;
+    }
+}
